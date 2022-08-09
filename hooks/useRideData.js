@@ -1,4 +1,5 @@
 import React, { useEffect, useState } from "react";
+import { data } from "../data/data";
 
 function useRideData({ userData }) {
   const pages = [
@@ -21,15 +22,16 @@ function useRideData({ userData }) {
   const [states, setStates] = useState([]);
   const [filterData, setFilterData] = useState([]);
   const fetchRidesData = async (url) => {
-    const response = await fetch(url);
-    const jsonData = await response.json();
-    setRideData(jsonData);
+    // const response = await fetch(url);
+    // const jsonData = await response.json();
+    setRideData(data);
   };
 
   const handleFilterDataState = (state) => setFilterData(byState[state]);
   const handleFilterDataCity = (city) => setFilterData(byCity[city]);
   const handleFilterReset = () => setFilterData(rideData);
   const fillRidesData = async () => {
+    console.log("rides data: ", rideData);
     let past = [];
     let future = [];
     let nearest = [];

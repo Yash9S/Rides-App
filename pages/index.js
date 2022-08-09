@@ -8,8 +8,8 @@ export const Data = createContext();
 export default function Home() {
   const userData = {
     station_code: 10,
-    name: "Kieran Patterson",
-    url: "https://picsum.photos/200",
+    name: "yaswanth_rahul",
+    url: "assets/images/dp.jpg",
   };
   const {
     pages,
