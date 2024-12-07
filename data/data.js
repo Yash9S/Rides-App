@@ -7,7 +7,7 @@ export const data = [
     date: 1644924365,
     map_url: "assets/images/img_1.jpg",
     state: "Andhra Pradesh",
-    city: "Visakhapatnam", 
+    city: "Visakhapatnam",  
   },
   {
     id: "002",
